@@ -1,6 +1,7 @@
 import ItemActions from "./ItemActions";
 import { Link } from "react-router-dom";
 import React from "react";
+import placeholderImage from "../../imgs/placeholder.png";
 
 const ItemMeta = (props) => {
   const item = props.item;
@@ -9,7 +10,7 @@ const ItemMeta = (props) => {
       <Link to={`/@${item.seller.username}`}>
         <img
           id="seller-image"
-          src={item.seller.image}
+          src={item.seller.image || placeholderImage}
           alt={item.seller.username}
           className="user-pic mr-2"
         />
