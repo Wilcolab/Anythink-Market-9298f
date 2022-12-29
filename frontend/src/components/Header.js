@@ -49,7 +49,7 @@ const LoggedInView = ({username, image}) => {
   );
 };
 
-const Header = ({currentUser}) => {
+function Header({currentUser}) {
     return (
       <nav
         className="navbar navbar-expand-md navbar-dark"
